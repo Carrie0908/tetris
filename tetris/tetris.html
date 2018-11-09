@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>俄罗斯方块 — 经典版V10</title>
+  <link rel="stylesheet" href="css/tetris.css"/>
+  <!--先引先被用的-->
+  <script src="js/shape.js"></script>
+  <script src = "js/tetris.js"></script>
+</head>
+<body>
+<div class="playground">
+  <p>SCORE:<span>0</span></p>
+  <p>LINES:<span>0</span></p>
+  <p>LEVEL:<span>1</span></p>
+</div>
+<script>
+  /*
+  * 横向有10个，纵向有20个；用序号去标识每个符号
+  * (0,4)(0,5)(1,4)(1,5)就是一个方格的样子
+  * 03 04 05 14 就是T
+  * 用4个方块的组合唯一标识一个图形。至少需要两种对象。
+  * 每一个格子都是一个对象。所有的俄罗斯方块的图片相当于就是4个方块组成
+  * 假设每个格子的宽和高都是26。这里是用坐标加宽度来定义一个方块。每次都是重新刷一编
+  *
+  * 补充的知识：如果是用call调用的话，不会在自己的原型上创建
+  *
+  * Object.setPrototypeOf(Plane.prototype,Flyer.prototype);将
+  *Flyer.prototype.isPrototypeOf(Plane.prototype)判断F是不是P的父对象
+  *判断有没有这个原型对象
+  * plane.prototype.hasOwnProperty("xx")判断这个原型里有没有这个原型
+  *
+  * */
+</script>
+</body>
+</html>
